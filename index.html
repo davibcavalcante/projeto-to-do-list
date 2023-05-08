@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logoicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/all-mobile.css">
+    <link rel="stylesheet" href="style/large-screen.css" media="screen and (min-width: 768px)">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <div class="add-task">
+            <form id="form-add-task">
+                <label for="input-add-task">Add your task:</label>
+                <div class="form-control">
+                    <input type="text" id="input-add-task" autocomplete="off" placeholder="What do you have to do?">
+                    <button type="submit" id="btn-add-task">&plus;</button>
+                </div>
+            </form>
+        </div>
+        <div class="edit-task hide">
+            <form id="form-edit-task">
+                <label for="input-edit-task">Edit your task:</label>
+                <div class="form-control">
+                    <input type="text" id="input-edit-task" autocomplete="off">
+                    <button type="submit" id="btn-edit-task">&dArr;</button>
+                </div>
+                <button id="btn-cancel-edit">Cancelar</button>
+            </form>
+        </div>
+        <div class="toolbar">
+            <div class="search-task">
+                <form id="form-search-task">
+                    <label for="input-search">Search:</label>
+                    <input type="text" id="input-search" autocomplete="off" placeholder="Search..."> 
+                </form>
+            </div>
+            <div class="filter-task">
+                <form id="filter-task">
+                    <label for="select-filter">Filter:</label>
+                    <select id="select-filter" onchange="filterTask()">
+                        <option value="all">All</option>
+                        <option value="done">Done</option>
+                        <option value="todo">To Do</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div id="tasks">
+            <!--
+            <div class="todo">
+                <p>Ir ao mercado</p>
+                <button class="btn-done">&check;</button>
+                <button class="btn-edit">&#9999;</button>
+                <button class="btn-remove">&Chi;</button>
+            </div>
+            -->
+        </div>
+        <footer>
+            <p>For you, the sky's not even the limit!</p>
+        </footer>
+    </div>
+
+    <script src="js/add-task.js"></script>
+    <script src="js/status-task.js"></script>
+    <script src="js/toolbar-task.js"></script>
+</body>
+</html>

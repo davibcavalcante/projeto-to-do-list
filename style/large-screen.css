@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background: black url(../imagens/background-large-screen.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 8px;
+}
+
+select { 
+    padding: 8px;
+}
+
+div.wrapper {
+    width: 500px;
+}
+
+div.search-task input{
+    width: 300px;
+}
+
+div.filter-task select {
+    width: 160px;
+}
+
+div.todo {
+    padding: 8px;
+}
+
+div.todo p {
+    font-size: 1.3em;
+}
