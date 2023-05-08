@@ -49,6 +49,7 @@ label {
 
 select {
     display: flex;
+    background-color: white;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid var(--color-2);
