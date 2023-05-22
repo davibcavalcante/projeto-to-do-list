@@ -34,7 +34,8 @@ function editTask(divTarget) {
     localTasks.classList.add('hide')
     divEditTask.classList.remove('hide')
 
-    btnCancelEdit.addEventListener('click', () => {
+    btnCancelEdit.addEventListener('click', (e) => {
+        e.preventDefault()
         divEditTask.classList.add('hide')
         divAddTask.classList.remove('hide')
         localTasks.classList.remove('hide')
